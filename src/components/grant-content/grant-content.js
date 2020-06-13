@@ -16,7 +16,7 @@ class GrantContent extends React.Component {
 
 	componentWillMount() {
 
-		fetch('http://localhost:3001/grants')
+		fetch('https://app-grant-services.herokuapp.com/grants')
 			.then((response) => {
 				return response.json()
 			})

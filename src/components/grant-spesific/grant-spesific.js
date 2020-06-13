@@ -13,7 +13,7 @@ class GrantSpesific extends React.Component {
         this.id = props.id
     }
     componentWillMount() {
-      fetch(`http://localhost:3001/grants/${this.id }`)
+      fetch(`https://app-grant-services.herokuapp.com/grants/${this.id }`)
         .then((response) => {
           return response.json()
         })
