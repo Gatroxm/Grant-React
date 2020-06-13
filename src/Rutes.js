@@ -6,7 +6,6 @@ import Grant from './containers/grant';
 const Routes = () => {
     return (
         <Switch>
-            <Route exact path="/" component={Home} />
             <Route exact path="/grants" component={Grants} />
             <Route exact path="/grants/:id" component={Grant} />
         </Switch>
